@@ -7,3 +7,11 @@
 	* "Le candidat est reçu" si la cote est entre 10 et 12
 	* "Le candidat est reçu avec mention" si la cote est supérieur ou égale à 12
 */
+const moy = prompt('Quelle est votre moyenne ?');
+if (moy<10){
+    console.log("Le candidat est recalé");
+} else if (10<=moy && moy<12){
+    console.log("Le candidat est reçu");
+}else if (12<=moy){
+    console.log("Le candidat est reçu avec mention");
+}
