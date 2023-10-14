@@ -116,6 +116,7 @@ if (bmiMark>bmiJohn){
 }else if(bmiMark<bmiJohn){
     console.log('Le BMI de John est plus élevé que celui de Mark');
 }
+
 /*
 Ecrire un programme qui teste si un nombre entré par l’utilisateur est pair ou impair.
 */
