@@ -41,7 +41,7 @@ MEILLEURE PRATIQUE : utiliser l'expression ternaire pour affecter une valeur ou 
 /* Faites la même chose en utilisant un if / else */
 
 if (age>=18) {
-    var drink='Bières'
+    let drink='Bières'
 }else{
     drink='Jus'
 }
