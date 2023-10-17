@@ -7,6 +7,19 @@ Les 31 à 50èmes KW sont à 20 centimes le KW
 Les 51 à 70èmes KW sont à 15 centimes le KW
 Les KW suivants sont à 10 centimes le KW
 */
+const consommation = prompt("Entrez le nombre de KW consommés :");
+let cout = 0;
+if (consommation <= 30) {
+    cout = consommation * 0.25;
+} else if (consommation <= 50) {
+    cout = (30 * 0.25) + ((consommation - 30) * 0.20);
+} else if (consommation <= 70) {
+    cout = (30 * 0.25) + (20 * 0.20) + ((consommation - 50) * 0.15);
+} else {
+    cout = (30 * 0.25) + (20 * 0.20) + (20 * 0.15) + ((consommation - 70) * 0.10);
+}
+
+console.log(`Le coût de la consommation électrique est de : ${cout} euros`);
 
 /*
 Valeurs de test :

@@ -15,3 +15,19 @@ calcule et affiche la somme versée aux restos du cœur.
 - 200€ (remise de 20€, 2€ versés)
 - 1000€ (remise de 100€, 2€ versés)
 */
+const prix=prompt('Quel est le montant de vos achats ?');
+switch (prix){
+    case prix<=25:
+        console.log(`Le montant de vos achats s'élève à ${prix}€, merci !`);
+        break;
+    case prix>25:
+        const rist =prix/10;
+        const prixFinal=prix-rist ;
+        console.log(`Le montant de vos achats s'élève à ${prix}€, vous avez droit à une remise de ${rist}  merci !`);
+        break;
+
+    case rist>5:
+        const verse=rist/10;
+        console.log(`Le montant de vos achats s'élève à ${prix}€, vous avez droit à une remise de ${rist}, ${verse}€ ont été versé au Resto Du Coeur, merci !`);
+
+}
