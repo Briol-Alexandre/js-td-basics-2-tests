@@ -14,6 +14,28 @@ AUTREMENT DIT :
 	3. Exception à l'exception : les années divisibles par 400 sont bissextiles
 */
 
+// Correction
+const annee= Number(prompt('Ecrivez une année'));
+let isBissextile=false; // pcq on a plus de chance de tomber sur une année B.
+//1e manière
+if (annee %4 ===0){
+	isBissextile=true;
+	if (annee%100 ===0){
+		isBessextile=false
+		if (annee%400 ===0){
+			isBissextile= false;
+		}
+	}
+}
+//2e manière
+if ((annee % 4 ===0 && !(annee % 100 ===0)) || (annee%400 ===0)){
+	isBessextile =true
+}
+if (isBessextile===true){
+console.log(annee+ "est une année bissextile");
+}else {
+console.log(annee+ "est une année non-bissextile");
+}
 /*
 AIDES ( à regarder seulement si vous ne vous en sortez pas tout seul)
 Etapes :
@@ -48,8 +70,8 @@ Etapes :
 	Au cas où vous n'auriez pas encore bien saisi la règle, on est bien d'accord que
 	2000 et 2004 sont bissextiles, 2006 et 2100 ne le sont pas :)
 */
-var year = Number(prompt("Entrez une année :"));
-var isBessextile;
+let year = Number(prompt("Entrez une année :"));
+let isBessextile;
 if (year % 4 === 0) {
 	if(year % 100 === 0) {
 		if(year % 400 === 0) {

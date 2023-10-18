@@ -19,7 +19,7 @@ if (consommation <= 30) {
     cout = (30 * 0.25) + (20 * 0.20) + (20 * 0.15) + ((consommation - 70) * 0.10);
 }
 
-console.log(`Le coût de la consommation électrique est de : ${cout} euros`);
+console.log(`Votre consommation s'élève  ${cout}€`);
 
 /*
 Valeurs de test :
